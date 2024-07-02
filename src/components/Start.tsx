@@ -1,10 +1,11 @@
+// @ts-ignore
 import React, {useState} from 'react';
 import {gamePage} from "../utils/constants.js";
 
 const Start = ({ changePage, changeName }) => {
-    const [name, setName] = useState('');
+    const [name, setName] = useState<string>('');
 
-    const handleClickStart = () => {
+    const handleClickStart = ():void => {
         changePage(gamePage);
         changeName(name);
     };
